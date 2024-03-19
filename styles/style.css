@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #F6F6F6;
+  --color-tertiary: #22D4FD;
+  --color-hover:#272727;
+
+  --font-main:'Krona One', sans-serif;
+  --font-secondary:'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.menu{
+  padding: 2% 0 0 15%;
+}
+.menu__nav{
+ display: flex;
+ gap: 80px;
+}
+
+.menu__nav_link{
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-tertiary);
+}
+.container {
+  padding: 8% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__content {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.destaque {
+  color: var(--color-tertiary);
+}
+
+.container__content_title {
+  font-size: 36px;
+  font-family: var(--font-main);
+}
+
+.container__content_text {
+  font-size: 24px;
+  font-family: var(--font-secondary);
+}
+.container__content_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.container__content_links_sub {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.container__content_links_btn {
+  border: 2px solid var(--color-tertiary);
+  width: 378px;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 21.5px 0;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  display: flex;
+}
+
+.container__content_links_btn:hover{
+  background-color: var(--color-hover);
+}
+
+.container__footer{
+  padding: 24px;
+  font-size: 24px;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  text-align: center;
+}
